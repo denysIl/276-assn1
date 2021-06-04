@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="calculator.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/calculator.css">
+</head>
+<body>
+<h1>Grade Calculator</h1>
+<main>
+  <h2>Activities</h2>
+  <p>Give grades to the numeric activities:</p>
+  <table id="table">
+    <tr id="header">
+      <th>Name</th>
+      <th>Short Name</th>
+      <th>Weight</th>
+      <th>Grade</th>
+      <th>Percent</th>
+    </tr>
+
+    <tr>
+
+      <td>Activity 1</td>
+      <td>A1</td>
+      <td><input type = "number" class="input_field" id="w1"/></td>
+      <td><input type = "number" class="input_field" id="num1"  onkeyup="Percent()"/> / <input type = "number" class="input_field" id="den1" onkeyup="Percent()"/></td>
+      <td id="p1"></td>
+    </tr>
+
+    <tr>
+      <td>Activity 2</td>
+      <td>A2</td>
+      <td><input type = "number" class="input_field" id="w2"/></td>
+      <td><input type = "number" class="input_field" id="num2" onkeyup="Percent()"/> / <input type = "number" class="input_field" id="den2" onkeyup="Percent()"/></td>
+      <td id="p2"></td>
+    </tr>
+
+    <tr>
+      <td>Activity 3</td>
+      <td>A3</td>
+      <td><input type = "number" class="input_field" id="w3"/></td>
+      <td><input type = "number" class="input_field" id="num3" onkeyup="Percent()"/> / <input type = "number" class="input_field" id="den3" onkeyup="Percent()"/></td>
+      <td id="p3"></td>
+    </tr>
+
+    <tr>
+      <td>Activity 4</td>
+      <td>A4</td>
+      <td><input type = "number" class="input_field" id="w4"/></td>
+      <td><input type = "number" class="input_field" id="num4" onkeyup="Percent()"/> / <input type = "number" class="input_field" id="den4" onkeyup="Percent()"/></td>
+      <td id="p4"></td>
+    </tr>
+  </table>
+
+    <h2 id="result">Result</h2>
+
+  <input type="button" value="MEAN" class="button" id="mean" onclick="Mean()"/>
+  <input type="button" value="WEIGHTED" class = "button" id="weighted" onclick="Weighted()"/>
+  <input type="button" value="DELETE ROW" class="button" id="delete" onclick="Delete()" style="float: left"/>
+  <input type="button" value="ADD ROW" class="button" id="add" onclick="Add()" style="float: left"/>
+</main>
+</body>
+</html>
